@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class ViewController: UIViewController {
+final class SettingsViewController: UIViewController {
     
     @IBOutlet var colorView: UIView!
 
@@ -42,6 +42,11 @@ final class ViewController: UIViewController {
         }
         
     }
+    
+    @IBAction func doneButtonTapped(_ sender: UIButton) {
+        dismiss(animated: true)
+    }
+    
     
     private func setColor() {
         colorView.backgroundColor = UIColor(
